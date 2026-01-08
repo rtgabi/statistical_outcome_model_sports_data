@@ -14,7 +14,7 @@ First, a dictionary "goals_scored" is created to hold in 4 lists:
 "home" -> stores the amount of goals scored by the team for every game played at home;
 "away" -> stores the amount of goals scored by the team for every game played away.
 
-Then, the Selenium bot goes on "Flashscore" and searches for the team, it then go to the "Results" tab and for every year in a list of years (start_year, 2025+1) it presses the "Search more matches" (it actually doesn't verify the year of a game played, (for now) it takes games that are played before the "start_year" parameter as well). Every game's information is stored in a list "res". Now the elements in "res" should look like this:
+Then, the Selenium bot goes on "Flashscore" and searches for the team, it then go to the "Results" tab and for every year in a list of years (start_year, 2025+1) it presses the "Search more matches". Every game's information is stored in a list "res". Now the elements in "res" should look like this:
 (date, team1, team2, goals1, goals2, result).
 (Another dictionary "head_to_head" is created to store the direct games between 2 teams)
 The "for-loop" first verifies that the year is not smaller than the "start_year" parameter.
